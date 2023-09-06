@@ -1,0 +1,12 @@
+AWK 
+awk -F " " '{PRINT $1}'filename 
+awk -F " " '{PRINT $1,$3}'filename 
+                         print 1.3 column 
+awk -F " " '{PRINT $NF}'filename  
+                    PRINT LAST COLUMN 
+awk -F " " '{PRINT $nf }'filename  
+                  PRINTS complete table  
+awk -F " " '{PRINT $(NF-1)}'filename  
+               PRINT LAST SECOND COLUMN 
+ls -lrt | awk -F " " '{print $NF}'  
+             To print last column using logs
